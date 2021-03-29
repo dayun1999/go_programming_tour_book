@@ -1,0 +1,43 @@
+Server:
+  RunMode: debug
+  HttpPort: 8000
+  ReadTimeout: 60
+  WriteTimeout: 60
+App:
+  DefaultPageSize: 10
+  MaxPageSize: 100
+  DefaultContextTimeout: 60 # second
+  LogSavePath: storage/logs
+  LogFileName: app
+  LogFileExt: .log
+  UploadSavePath: storage/uploads
+  UploadServerUrl: http://47.105.163.237:8000/static
+  UploadImageMaxSize: 5  # MB
+  UploadImageAllowExts:
+    - .jpg
+    - .jpeg
+    - .png
+Database:
+  DBType: mysql
+  Username: monty # 填写你的数据库账号
+  Password: golang666@WDY # 填写你的数据库密码
+  Host: 47.105.163.237:3306
+  DBName: blog_service
+  TablePrefix: blog_
+  Charset: utf8
+  ParseTime: True
+  MaxIdleConns: 10
+  MaxOpenConns: 30
+JWT:
+  Secret: wdywdy
+  Issuer: blog-service
+  Expire: 7200
+Email:
+  Host: smtp.qq.com
+  Port: 465
+  UserName: 2664683329@qq.com
+  Password: golang666@WDY
+  IsSSL: true
+  From: 2482537393@qq.com
+  To:
+    - 2664683329@qq.com
