@@ -41,7 +41,7 @@ func main() {
 	gin.SetMode(global.ServerSetting.RunMode)
 	router := routers.NewRouter()
 	s := &http.Server{
-		Addr:           "47.105.163.237:" + global.ServerSetting.HttpPort,
+		Addr:           ":" + global.ServerSetting.HttpPort,
 		Handler:        router,
 		ReadTimeout:    global.ServerSetting.ReadTimeout,
 		WriteTimeout:   global.ServerSetting.WriteTimeout,
@@ -106,7 +106,7 @@ func setupLogger() error {
 }
 
 func setupTracer() error {
-	jaegerTracer, _, err := tracer.NewJaegerTracer("blog-service", "47.105.163.237:6831")
+	jaegerTracer, _, err := tracer.NewJaegerTracer("blog-service", "127.0.0.1:6831")
 	if err != nil {
 		return err
 	}
