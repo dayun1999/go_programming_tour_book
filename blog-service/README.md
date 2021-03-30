@@ -14,3 +14,8 @@ go get -u github.com/juju/ratelimit
 go get -u github.com/opentracing/opentracing-go
 go get -u github.com/uber/jaeger-client-go
 ```
+
+- #### P135 SQL追踪
+```go
+go get -u github.com/eddycjy/opentracing-gorm
+```

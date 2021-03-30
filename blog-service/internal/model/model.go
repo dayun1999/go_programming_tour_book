@@ -2,6 +2,7 @@ package model
 
 import (
 	"fmt"
+	otgorm "github.com/eddycjy/opentracing-gorm"
 	"github.com/go-programming-tour-book/blog-service/global"
 	"github.com/go-programming-tour-book/blog-service/pkg/settings"
 	"github.com/jinzhu/gorm"
@@ -42,7 +43,7 @@ func NewDBEngine(databaseSetting *settings.DatabaseSettingS) (*gorm.DB, error) {
 	db.Callback().Delete().Replace("gorm:delete", deleteCallback)
 	db.DB().SetMaxOpenConns(global.DatabaseSetting.MaxIdleConns)
 	db.DB().SetMaxOpenConns(global.DatabaseSetting.MaxOpenConns)
-
+	otgorm.AddGormCallbacks(db)
 	return db, nil
 }
 
