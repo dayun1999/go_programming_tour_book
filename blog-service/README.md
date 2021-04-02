@@ -19,3 +19,9 @@ go get -u github.com/uber/jaeger-client-go
 ```go
 go get -u github.com/eddycjy/opentracing-gorm
 ```
+
+- #### P141 配置热更新
+```go
+go get -u golang.org/x/sys/...
+go get -u github.com/fsnotify/fsnotify
+```

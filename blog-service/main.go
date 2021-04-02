@@ -48,7 +48,7 @@ func main() {
 		MaxHeaderBytes: 1 << 20,
 	}
 	_ = s.ListenAndServe()
-	global.Logger.Infof("%s: go-programming-tour-book/%s", "wdy", "blog-service")
+	//global.Logger.Infof(c, "%s: go-programming-tour-book/%s", "wdy", "blog-service")
 
 }
 
