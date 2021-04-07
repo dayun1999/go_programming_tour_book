@@ -12,7 +12,11 @@ type Setting struct {
 func NewSetting(configs ...string) (*Setting, error) {
 	vp := viper.New()
 	vp.SetConfigName("config")
-	vp.AddConfigPath("configs/")
+	for _, config := range configs {
+		if config != "" {
+			vp.AddConfigPath(config)
+		}
+	}
 	vp.SetConfigType("yaml")
 	err := vp.ReadInConfig()
 	if err != nil {
