@@ -48,3 +48,8 @@ yum install gcc gcc-c++
 ```go
 go get -u github.com/golang/protobuf/protoc-gen-go
 ``` 
+
+- #### P171 安装gRPC
+```go
+go get -u google.golang.org/grpc
+```
