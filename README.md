@@ -1,5 +1,6 @@
 # go_programming_tour_book
-《Go编程之旅 一起用go做项目》
+
+《Go编程之旅 一起用go做项目》<br>
 首先要设置国内镜像代理:
 ```go
 go env -w GORPOXY=https://goproxy.cn,direct
@@ -118,3 +119,13 @@ go get -u github.com/grpc-ecosystem/go-grpc-middleware
 go get -u github.com/opentracing/opentracing-go
 go get -u github.com/uber/jaeger-client-go
 ```
+
+- #### P281 Websocket的使用
+```go
+go get nhooyr.io/websocket
+```
+wireshark抓包协议分析<br>
+<p align="center">
+    <img src="https://github.com/code4EE/go_programming_tour_book/blob/main/20210417181104.png" width="600">
+</p>
+
