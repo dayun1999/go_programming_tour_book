@@ -125,5 +125,5 @@ go get -u github.com/uber/jaeger-client-go
 go get nhooyr.io/websocket
 ```
 wireshark抓包协议分析<br>
-![image](https://github.com/code4EE/go_programming_tour_book/blob/main/20210417181104.png)
+![image](https://github.com/code4EE/images/blob/main/20210417181104.png)
 
