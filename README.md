@@ -1,5 +1,7 @@
 # go_programming_tour_book
 
+2021年9月6日23:32:32 修改
+### 【PS】新来的初学者别看我这个了，直接去看原作者之一(煎鱼大佬)开源的图书[点这里](https://golang2.eddycjy.com/)
 《Go编程之旅 一起用go做项目》<br>
 首先要设置国内镜像代理:
 ```go
